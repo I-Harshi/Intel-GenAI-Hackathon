@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Shop</title>
+    <link rel="stylesheet" href="minimalist.css">
+</head>
+<body>
+    <header>
+        <h1>Minimalist Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart summary section -->
+    <section class="cart-summary">
+        <h2>Your Cart</h2>
+        <p id="cart-items">No items in cart</p>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+    </section>
+
+    <main>
+        <section class="products">
+            <div class="product" data-name="Product 1" data-price="19.99">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 2" data-price="24.99">
+                <h2>Product 2</h2>
+                <p>$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Minimalist Shop</p>
+    </footer>
+
+    <script src="minimalist.js"></script>
+</body>
+</html>

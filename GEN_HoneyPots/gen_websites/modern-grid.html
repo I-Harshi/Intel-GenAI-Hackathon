@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful E-Commerce Shop</title>
+    <link rel="stylesheet" href="modern-grid.css">
+</head>
+<body>
+    <header>
+        <h1>Colorful E-Commerce Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Summary -->
+    <section class="cart-summary">
+        <h2>Your Cart</h2>
+        <p id="cart-items">No items in cart</p>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+    </section>
+
+    <main>
+        <!-- Product Grid -->
+        <section class="products">
+            <div class="product" data-name="Product A" data-price="29.99">
+                <img src="https://via.placeholder.com/150/ff7f50/ffffff?text=Product+A" alt="Product A">
+                <h2>Product A</h2>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product B" data-price="39.99">
+                <img src="https://via.placeholder.com/150/20b2aa/ffffff?text=Product+B" alt="Product B">
+                <h2>Product B</h2>
+                <p>$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product C" data-price="49.99">
+                <img src="https://via.placeholder.com/150/9370db/ffffff?text=Product+C" alt="Product C">
+                <h2>Product C</h2>
+                <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Colorful E-Commerce Shop</p>
+    </footer>
+
+    <script src="modern-grid.js"></script>
+</body>
+</html>

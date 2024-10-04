@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Services</title>
+    <link rel="stylesheet" href="govt2.css">
+</head>
+<body>
+    <header>
+        <h1>Government of [Your Country]</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search services...">
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Available Services</h2>
+            <div id="service-list"></div>
+        </section>
+
+        <section class="news">
+            <h2>Latest News</h2>
+            <div id="news-list"></div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Government of [Your Country]. All rights reserved.</p>
+    </footer>
+
+    <script src="govt2.js"></script>
+</body>
+</html>
