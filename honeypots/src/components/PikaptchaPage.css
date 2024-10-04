@@ -1,0 +1,40 @@
+/* PikaptchaPage.css */
+.pikaptcha-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .pikaptcha-header {
+    margin-bottom: 30px;
+  }
+  
+  .pikaptcha-header h1 {
+    font-size: 32px;
+    color: #3a3a3a;
+  }
+  
+  .pikaptcha-header p {
+    font-size: 16px;
+    color: #606060;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    color: #4caf50;
+    margin: 5px 0;
+  }
+  
+  .prediction-section, .city-data-section {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,28 @@
+/* src/styles/LanguageSelector.css */
+.language-selector {
+    text-align: center;
+  }
+  
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .language-btn {
+    background-color: #007bff; /* Adjust as needed */
+    color: white;
+    border: none;
+    padding: 200px 40px; /* Increase padding for larger button */
+    font-size: 18px; /* Increase font size */
+    margin: 10px; /* Add space between buttons */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Optional: smooth transition */
+  }
+  
+  .language-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

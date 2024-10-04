@@ -1,0 +1,95 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.info-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.link-section {
+  margin-top: 20px;
+}
+
+.explore-link {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.explore-link:hover {
+  background-color: #21a1f1;
+}
+
+/* Register Form */
+.register-section {
+  background-color: #b4b5b5eb;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 50%; /* Matches the width of the form */
+  max-width: 400px; /* Ensures it's not too wide */
+}
+
+.register-form {
+  margin-top: 20px;
+}
+
+.register-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+ color:white
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #201740;
+  border-radius: 5px;
+}
+
+.register-form button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #21a1f1;
+}
+
+/* Honeypot Fields */
+.honeypot {
+  visibility: hidden; /* Invisible to users but still present in the HTML */
+  position: absolute;
+  left: -9999px; /* Keeps it off the visible page, but HTML still includes it */
+}
