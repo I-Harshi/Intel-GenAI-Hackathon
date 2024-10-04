@@ -6,7 +6,7 @@ import Home from './components/Home';
 import PikaptchaPage from './components/PikaptchaPage'; 
 import './App.css';
 
-interface Language {
+interface Language { 
   code: string;
   label: string; 
 }
