@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Platform</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header and Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Main Banner */
+    .banner {
+      background-color: #a8dedf;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #004e59;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    /* Offer Section */
+    .offers {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .offer-box {
+      background-color: #f0f0f0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .offer-box p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .offer-box button {
+      background-color: #ff7043;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .offer-box button:hover {
+      background-color: #ff5722;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .offers {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .offer-box {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h2>Coupon Stop</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">BEAUTY</a></li>
+        <li><a href="#">WATCHES</a></li>
+        <li><a href="#">GIFTS</a></li>
+        <li><a href="#">BRANDS</a></li>
+        <li><a href="#">STYLE HUB</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Banner -->
+  <section class="banner">
+    <h1>Coupon Stop Makes Your Day</h1>
+    <p>500+ Brands To Choose the Coupons From</p>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers">
+    <div class="offer-box">
+      <p>Flat ₹150 OFF on ₹2000</p>
+      <button>Use Code</button>
+    </div>
+    <div class="offer-box">
+      <p>Flat ₹200 OFF on ₹3000</p>
+      <button>Use Code</button>
+    </div>
+    <div class="offer-box">
+      <p>Flat ₹350 OFF on ₹5000</p>
+      <button>Use Code</button>
+    </div>
+  </section>
+
+  <!-- JavaScript to mimic button functionality -->
+  <script>
+    const buttons = document.querySelectorAll('.offer-box button');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Discount Code Applied!');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<input type="hidden" name="fake_cart" value="phantom_cart">
