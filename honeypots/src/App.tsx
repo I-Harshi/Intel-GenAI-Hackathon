@@ -14,6 +14,7 @@ interface Language {
 const App: React.FC = () => {
   const [languages, setLanguages] = useState<Language[]>([]);
   const [mouseMovements, setMouseMovements] = useState<{ x: number; y: number; timestamp: number }[]>([]);
+  const [isBotDetected, setIsBotDetected] = useState(false); // To flag bot detection
 
   useEffect(() => {
     const loadLanguages = async () => {
@@ -24,10 +25,9 @@ const App: React.FC = () => {
     loadLanguages();
   }, []);
 
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
   const handleLanguageSelect = (langCode: string) => {
-    // Redirect to the PikaptchaPage on language selection
     navigate('/pikaptcha');
   };
 
@@ -48,11 +48,15 @@ const App: React.FC = () => {
     };
   }, []);
 
+  // Honeypot event handler for detecting bot interaction
+  const handleHoneypotClick = () => {
+    setIsBotDetected(true); // Flag as bot detected
+    console.log("Bot interaction detected");
+  };
+
   const handleSaveMouseMovements = () => {
-    // Save the mouseMovements to your desired storage method
     console.log("Mouse Movements Data:", mouseMovements);
     // You can also send this data to your backend API for further processing
-    // e.g., fetch('/api/saveMouseData', { method: 'POST', body: JSON.stringify(mouseMovements) });
   };
 
   return (
@@ -61,7 +65,7 @@ const App: React.FC = () => {
         <img src={sihLogo} className="App-logo-small" alt="SIH Logo" />
         <h1 className="team-text">Team Name: Zoeo</h1>
         <h2 className="sih-code">Team ID: A0064</h2>
-        <h2 className="sih-code">Problem Statement Title: Develop a ML Model based solution to redefine CAPTCHA.</h2>
+        <h2 className="sih-code">Problem Statement Taken :  REDEFINING CAPTCHA WITH AI GENERATED HONEYPOTS</h2>
         <h1>UIDAI</h1>
       </header>
 
@@ -78,14 +82,26 @@ const App: React.FC = () => {
             </button>
           ))}
         </div>
-        
       </div>
+
+      {/* Hidden honeypot link for bot detection */}
+      <a 
+        href="#"
+        style={{ display: 'none' }} 
+        onClick={handleHoneypotClick}
+        aria-hidden="true"
+      >
+        Hidden Honeypot Link
+      </a>
 
       {/* React Router v6 Routes Setup */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pikaptcha" element={<PikaptchaPage />} />
       </Routes>
+
+      {/* Optional logging of bot detection */}
+      {isBotDetected && <p style={{ color: 'red' }}>Bot Detected!</p>}
     </div>
   );
 };
