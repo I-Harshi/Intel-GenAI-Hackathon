@@ -4,6 +4,8 @@
 
 This project provides an AI-driven honeypot generator that creates customized honeypot scripts for various sectors such as e-commerce, blogs, social media, banking, forums, and more. The generated scripts include different security features like fake login forms, hidden inputs, fake buttons, fake carts, and passive CAPTCHA functionalities to detect and thwart bot activity.
 
+<img src="KPR Zoeo.png">
+
 ## Features
 
 - **Sector Selection**: Choose from multiple sectors to tailor the honeypot script.
