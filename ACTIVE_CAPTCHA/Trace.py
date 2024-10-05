@@ -1,3 +1,5 @@
+# dataset used : https://www.kaggle.com/datasets/vencerlanz09/shells-or-pebbles-an-image-classification-dataset/data
+
 import random
 import math
 import os
