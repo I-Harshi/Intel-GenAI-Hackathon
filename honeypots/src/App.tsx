@@ -62,7 +62,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={sihLogo} className="App-logo-small" alt="SIH Logo" />
+        <img src={sihLogo} className="App-logo-small" alt="Logo" />
         <h1 className="team-text">Team Name: Zoeo</h1>
         <h2 className="sih-code">Team ID: A0064</h2>
         <h2 className="sih-code">Problem Statement Taken :  REDEFINING CAPTCHA WITH AI GENERATED HONEYPOTS</h2>
