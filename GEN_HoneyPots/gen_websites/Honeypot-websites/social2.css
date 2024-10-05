@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.feed {
+  width: 80%;
+  padding: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: none; /* Hide honeypot label */
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f4f4f4;
+}

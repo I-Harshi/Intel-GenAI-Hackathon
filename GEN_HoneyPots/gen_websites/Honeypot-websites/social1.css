@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background-color: #3b5998; /* Facebook Blue */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  margin: 1rem;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.feed {
+  flex-grow: 1;
+  margin-left: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.post {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.like-button {
+  background-color: #007bff; /* Bootstrap Blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+
+footer {
+  background-color: #3b5998; /* Facebook Blue */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Honeypot Styles - Hidden */
+input[type="text"][name="honeypot"] {
+  display: none; /* Ensures honeypot is hidden from users */
+}

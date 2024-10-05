@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="social1.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Friends</h2>
+            <ul>
+                <li>John Doe</li>
+                <li>Jane Smith</li>
+                <li>Sam Wilson</li>
+                <li>Lisa Brown</li>
+            </ul>
+        </aside>
+
+        <section class="feed">
+            <h2>Create a Post</h2>
+            <div class="post-form">
+                <textarea placeholder="What's on your mind?" rows="4"></textarea>
+                <input type="text" name="honeypot" class="honeypot" placeholder="Leave this empty" />
+                <button id="post-button">Post</button>
+            </div>
+            <h2>Latest Posts</h2>
+            <div id="post-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Social Media. All rights reserved.</p>
+    </footer>
+
+    <script src="social1.js"></script>
+</body>
+</html>
