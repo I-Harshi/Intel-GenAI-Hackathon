@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import sihLogo from './sih.png';
+import Logo from './logo.png';
 import { fetchLanguages } from './api/languageAPI';
 import Home from './components/Home'; 
 import PikaptchaPage from './components/PikaptchaPage'; 
@@ -62,7 +62,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={sihLogo} className="App-logo-small" alt="Logo" />
+        <img src={Logo} className="App-logo-small" alt="Logo" />
         <h1 className="team-text">Team Name: Zoeo</h1>
         <h2 className="sih-code">Team ID: A0064</h2>
         <h2 className="sih-code">Problem Statement Taken :  REDEFINING CAPTCHA WITH AI GENERATED HONEYPOTS</h2>
